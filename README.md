@@ -33,6 +33,44 @@ Link to repository: [GitHub Repo](https://github.com/your-repo-link)
 
 ---
 
+
+---
+
+## 📚 Resources
+
+- Graphics Programming Teachers at [University Name / Institution] – Digital Arts & Entertainment  
+- [The Vulkan Tutorial](https://vulkan-tutorial.com)  
+- [Morgan McGuire’s Computer Graphics Archive](https://casual-effects.com/data)  
+- [Khronos Group’s glTF Sample Assets](https://github.com/KhronosGroup/glTF-Sample-Assets)  
+- [OpenGL’s Tutorials at LearnOpenGL](https://learnopengl.com)  
+- Extra repository storing all the models and textures used: [Resources Repository](https://github.com/resource-repo-link)
+
+---
+
+## 📦 Third-Party Libraries
+
+This project uses the following third-party libraries:
+
+### Vulkan
+| Library | Purpose |
+|---------|---------|
+| [Vulkan API](https://vulkan.lunarg.com/sdk/home) | Vulkan |
+| [Vulkan Memory Allocator (VMA)](https://gpuopen.com/vulkan-memory-allocator/) | Vulkan Memory |
+
+### Other
+| Library | Purpose |
+|---------|---------|
+| [GLFW](https://www.glfw.org/) | Window & Input |
+| [glm](https://github.com/g-truc/glm) | Math Library |
+| [stb](https://github.com/nothings/stb) | Texture Loading |
+| [Assimp](https://github.com/assimp/assimp) | Model Loading |
+
+---
+
+## 📝 License
+This project is licensed under the [MIT License](LICENSE).
+
+
 ## 📝 License
 This project is licensed under the [MIT License](LICENSE).
 ****
