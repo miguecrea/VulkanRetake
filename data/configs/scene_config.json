@@ -39,30 +39,6 @@
   ],
   "3d": [
     {
-      "name": "suzanne",
-      "transform": {
-        "position": [
-          -1.2,
-          -0.2,
-          2.2
-        ],
-        "scale": -0.5
-      },
-      "model": "assets/models/suzanne.obj"
-    },
-    {
-      "name": "beetle",
-      "transform": {
-        "position": [
-          -0.2,
-          2.0,
-          1.5
-        ],
-        "scale": -5.8
-      },
-      "model": "assets/models/beetle.obj"
-    },
-    {
       "name": "quad",
       "transform": {
         "scale": 3

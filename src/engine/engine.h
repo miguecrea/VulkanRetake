@@ -27,12 +27,12 @@ namespace dae
         engine &operator=(engine const &other) = delete;
         engine &operator=(engine &&other)      = delete;
 
-        void run(std::function<void()> const &load);
+        void run(std::function<void()> const & load);
 
     private:
-        window   *window_ptr_   = nullptr;
-        device   *device_ptr_   = nullptr;
-        renderer *renderer_ptr_ = nullptr;
+        window   * window_ptr_   = nullptr;
+        device   * device_ptr_   = nullptr;
+        renderer * renderer_ptr_ = nullptr;
         
         std::unique_ptr<descriptor_pool> global_pool_{};
 

@@ -25,6 +25,8 @@ namespace dae
     class model final
     {
     public:
+
+
         struct vertex
         {
             glm::vec3 position = {};
@@ -39,10 +41,14 @@ namespace dae
             bool operator==(vertex const &other) const;
         };
 
+
+
+
+
         struct builder
         {
             std::vector<vertex> vertices = {};
-            std::vector<uint32_t>   indices = {};
+            std::vector<uint32_t> indices = {};
 
             void load_model(std::string const &file_path);
         };

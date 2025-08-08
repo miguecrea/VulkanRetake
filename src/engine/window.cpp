@@ -19,7 +19,7 @@ namespace dae
         }
     }
 
-    void window::framebuffer_resize_callback(GLFWwindow *window_ptr, int width, int height)
+    void window::framebuffer_resize_callback(GLFWwindow * window_ptr, int width, int height)
     {
         auto updated_window = reinterpret_cast<window*>(glfwGetWindowUserPointer(window_ptr));
         updated_window->frame_buffer_resized_ = true;

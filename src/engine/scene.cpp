@@ -23,14 +23,15 @@ namespace dae
 
     void scene::update()
     {
-        auto &frame = frame_info::instance();
+        auto & frame = frame_info::instance();
+
         frame.game_objects = objects();
         system_->update();
     }
 
     void scene::render() const
     {
-        auto &frame = frame_info::instance();
+        auto & frame = frame_info::instance();
         frame.game_objects = objects();
         system_->render();
     }
@@ -45,7 +46,8 @@ namespace dae
     {
         std::vector<game_object*> objects;
         objects.reserve(objects_.size());
-        for (auto const &object : objects_)
+
+        for (auto const & object : objects_)
         {
             objects.push_back(object.get());
         }

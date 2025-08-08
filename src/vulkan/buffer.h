@@ -30,6 +30,7 @@ namespace dae
         auto descriptor_info(VkDeviceSize size = VK_WHOLE_SIZE, VkDeviceSize offset = 0) -> VkDescriptorBufferInfo;
         auto invalidate(VkDeviceSize size = VK_WHOLE_SIZE, VkDeviceSize offset = 0) -> VkResult;
 
+
         void write_to_index(void *data, int index);
         auto flush_index(int index) -> VkResult;
         auto descriptor_info_for_index(int index) -> VkDescriptorBufferInfo;

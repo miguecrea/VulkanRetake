@@ -25,7 +25,7 @@
 
 namespace dae
 {
-    texture::texture(std::string const &file_path, VkFormat format)
+    texture::texture(std::string const & file_path, VkFormat format)
         : device_ptr_{&device::instance()}
         , image_format_{format}
     {

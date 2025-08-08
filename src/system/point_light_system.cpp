@@ -34,6 +34,9 @@ namespace dae
 
     void point_light_system::update()
     {
+
+
+        //update ligfhts
         auto &frame_info = frame_info::instance();
         auto rotate_light = glm::rotate(
             glm::mat4{1.0f},

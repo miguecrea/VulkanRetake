@@ -33,6 +33,9 @@ namespace dae
                 },
                 {translation.x, translation.y, translation.z, 1.0f}
         };
+
+        //transform local to world space 
+        // glm::vec4 worldPos = transform.mat4() * glm::vec4(localPos, 1.0f);
     }
 
     glm::mat4 transform_component::normal_matrix()

@@ -34,7 +34,6 @@ namespace dae
 
         auto create_scene(std::string const &name, std::unique_ptr<i_system> system) -> scene *;
 
-    private:
         friend class singleton<scene_manager>;
         scene_manager();
         

@@ -57,7 +57,11 @@ namespace dae
 
     auto model::vertex::get_attribute_descriptions() -> std::vector<VkVertexInputAttributeDescription>
     {
+
+
+        //binding the info to the sahder 
         std::vector<VkVertexInputAttributeDescription> attribute_descriptions{};
+
         VkVertexInputAttributeDescription position{
             .location = 0,
             .binding  = 0,
@@ -114,6 +118,7 @@ namespace dae
         std::string warn, err;
 
         std::string const path = ENGINE_DIR + engine::data_path + file_path;
+
         if (not tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, path.c_str()))
         {
             throw std::runtime_error{warn + err};
@@ -121,6 +126,7 @@ namespace dae
 
         vertices.clear();
         indices.clear();
+
 
         std::unordered_map<vertex, uint32_t> unique_vertices{};
 
@@ -220,8 +226,10 @@ namespace dae
     {
         builder builder{};
         builder.load_model(file_path);
+
+
 #ifndef NDEBUG
-        std::cout << "Vertex count: " << builder.vertices.size() << '\n';
+
 #endif
         return std::make_unique<model>(builder);
     }
@@ -231,7 +239,6 @@ namespace dae
         builder builder{};
         builder.vertices = vertices;
 #ifndef NDEBUG
-        std::cout << "Vertex count: " << builder.vertices.size() << '\n';
 #endif
         return std::make_unique<model>(builder);
     }

@@ -17,7 +17,7 @@ namespace dae
     {
     }
 
-    descriptor_set_layout::builder &descriptor_set_layout::builder::add_binding(
+    descriptor_set_layout::builder & descriptor_set_layout::builder::add_binding(
         uint32_t binding,
         VkDescriptorType descriptor_type,
         VkShaderStageFlags stage_flags,

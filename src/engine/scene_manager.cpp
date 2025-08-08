@@ -14,7 +14,7 @@ namespace dae
 
     void scene_manager::update()
     {
-        for (auto const &scene : scenes_)
+        for (auto const & scene : scenes_)
         {
             scene->update();
         }
@@ -22,7 +22,7 @@ namespace dae
 
     void scene_manager::render()
     {
-        for (auto const &scene : scenes_)
+        for (auto const & scene : scenes_)
         {
             scene->render();
         }
@@ -39,7 +39,7 @@ namespace dae
 
     auto scene_manager::create_scene(std::string const &name, std::unique_ptr<i_system> system) -> scene *
     {
-        scenes_.emplace_back(std::unique_ptr<scene>(new scene(name, std::move(system))));
+        scenes_.emplace_back(std::unique_ptr<scene>(new scene(name,std::move(system))));
         return scenes_.back().get();
     }
 }

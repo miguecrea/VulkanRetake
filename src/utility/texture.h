@@ -14,7 +14,7 @@ namespace dae
     class texture
     {
     public:
-        texture(std::string const &file_path, VkFormat format);
+        texture(std::string const & file_path, VkFormat format);
         ~texture();
 
         texture(texture const &)            = delete;

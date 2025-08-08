@@ -16,6 +16,8 @@ namespace dae
     class descriptor_set_layout final
     {
     public:
+
+
         class builder final
         {
         public:
@@ -30,9 +32,12 @@ namespace dae
             [[nodiscard]] auto build() const -> std::unique_ptr<descriptor_set_layout>;
 
         private:
-            device *device_ptr_ = nullptr;
+            device * device_ptr_ = nullptr;
             std::unordered_map<uint32_t, VkDescriptorSetLayoutBinding> bindings_{};
         };
+
+        
+
 
         explicit descriptor_set_layout(std::unordered_map<uint32_t, VkDescriptorSetLayoutBinding> bindings);
         ~descriptor_set_layout();

@@ -34,6 +34,8 @@ namespace dae
 
     private:
         friend class singleton<window>;
+
+
         window() = default;
 
     private:

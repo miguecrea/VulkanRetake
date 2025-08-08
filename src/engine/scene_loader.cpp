@@ -19,13 +19,18 @@ namespace dae
 
     void scene_loader::load_2d_scene()
     {
-        auto scene_ptr = scene_manager::instance().find("2d");
+        auto scene_ptr = scene_manager::instance().find("2d"); //find scene
         auto go_ptr = scene_ptr->create_game_object("oval");
+
+        //create game object 
+
+
+
         go_ptr->model = factory::create_oval({}, 0.5f, 0.5f, 50);
         go_ptr->transform.translation = {2.0f, -1.0f, 0.0f};
-        
+
         scene_ptr = scene_manager::instance().find("2d");
-        auto const &scene_config = scene_config_manager::instance().scene_config();
+        auto const & scene_config = scene_config_manager::instance().scene_config();
         
         go_ptr = scene_ptr->create_game_object("oval");
         go_ptr->model = factory::create_oval({}, 0.5f, 0.5f, 30);
@@ -35,7 +40,13 @@ namespace dae
         go_ptr = scene_ptr->create_game_object("ngon");
         go_ptr->model = factory::create_n_gon({}, 0.5f, 3);
         go_ptr->transform.translation = {-2.0f, -1.0f, 0.0f};
+
+        // 
         
+
+        //2d scene load 
+
+
         
         for (auto const &object : scene_config["2d"])
         {
@@ -44,6 +55,7 @@ namespace dae
             if (object.contains("transform"))
             {
                 auto transform = object["transform"];
+
                 glm::vec3 position = transform.contains("position") ? glm::vec3{transform["position"][0], transform["position"][1], transform["position"][2]} : glm::vec3{0.0f};
                 glm::vec3 rotation = transform.contains("rotation") ? glm::vec3{transform["rotation"][0], transform["rotation"][1], transform["rotation"][2]} : glm::vec3{0.0f};
                 glm::vec3 scale = glm::vec3{1.0f};
@@ -145,10 +157,12 @@ namespace dae
         auto scene_ptr = scene_manager::instance().find("material_pbr");
         auto const &scene_config = scene_config_manager::instance().scene_config();
         
-        for (auto const &object : scene_config["material_pbr"])
+        for (auto const & object : scene_config["material_pbr"])
         {
             std::string name = object.contains("name") ? object["name"] : "game_object";
             auto go_ptr = scene_ptr->create_game_object(name);
+
+
             if (object.contains("transform"))
             {
                 auto transform = object["transform"];
@@ -175,8 +189,11 @@ namespace dae
                 go_ptr->model = model::create_model(object["model"]);
             }
 
+
+
             float r, g, b;
             r = g = b = 1.0f;
+
             if (object.contains("base_color"))
             {
                 if (object["base_color"].is_number())
