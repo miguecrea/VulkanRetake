@@ -1,7 +1,7 @@
 # 🏛️ Vulkan Retake
 
 **Vulkan Retake GameEngine** is a small engine, written in **C++**.  
-It is a learning project to explore the Vulkan API  as part of the **[Graphics Porgramming 2  course ]** at **[Howest]**.
+It is a learning project to explore the Vulkan API  as part of the Graphics Porgramming 2  course  at Howest .
 
 Link to repository: [GitHub Repo](https://github.com/your-repo-link)
 
@@ -30,11 +30,9 @@ Link to repository: [GitHub Repo](https://github.com/your-repo-link)
 
 - Graphics Programming Teachers at Howest – Digital Arts & Entertainment  
 - [The Vulkan Tutorial](https://vulkan-tutorial.com)  
-- [Morgan McGuire’s Computer Graphics Archive](https://casual-effects.com/data)  
-- [Khronos Group’s glTF Sample Assets](https://github.com/KhronosGroup/glTF-Sample-Assets)  
-- [OpenGL’s Tutorials at LearnOpenGL](https://learnopengl.com)  
+- [Morgan McGuire’s Computer Graphics Archive](https://casual-effects.com/data)
+- [Vulkan Game Engine Tutorial](https://www.youtube.com/watch?v=Y9U9IE0gVHA&list=PL8327DO66nu9qYVKLDmdLW_84-yE4auCR)
 ---
-
 ## 📦 Third-Party Libraries
 This project uses the following third-party libraries:
 
