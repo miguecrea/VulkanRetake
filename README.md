@@ -15,7 +15,9 @@ Link to repository: [GitHub Repo](https://github.com/miguecrea/VulkanRetake)
 - **S**: Move backward  
 - **D**: Move right  
 - **E**: Move (world) up  
-- **Q**: Move (world) down  
+- **Q**: Move (world) down
+- **UP,DOWN,LEFT,RIGHT**: Look Around
+
 
 ### Look Around
 - **LMB + DRAG**: Look around  
